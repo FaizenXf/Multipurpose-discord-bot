@@ -2,15 +2,15 @@
     "token": "GET from: https://discord.com/developers/applications",
     "prefix": "//",
     "ownerIDS": [
-        "442355791412854784"
+        "963354050617815060"
     ],
     "fnbr": "GET from: https://fnbr.co",
     "fortnitetracker": "GET from: https://fortnitetracker.com",
     "memer_api": "GET from: https://discord.gg/Mc2FudJkgP",
     "status": {
-        "text": "{prefix}help | on {guildcount} Servers, with {membercount} Members | Played: {songsplayed} Songs",
-        "text2": "By: discord.gg/dcdev",
-        "type": "PLAYING",
+        "text": "{prefix}help | FaizenSosuke",
+        "text2": "/help | @SafariiUtil",
+        "type": "LISTENING",
         "url": "https://twitch.tv/milratodiscordbot"
     },
     "clientsettings": {
