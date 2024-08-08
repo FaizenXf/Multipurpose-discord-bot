@@ -23,8 +23,8 @@
         ]
     },
     "spotify": {
-        "clientSecret": "GET from: https://developers.spotify.com",
-        "clientID": "GET from: https://developers.spotify.com"
+        "clientSecret": "9222247bb10e4736b1ef6db7222639d1",
+        "clientID": "4b2a3f3c14a041378cae75799597d349"
     },
     "settings": {
         "COMMENT": "time_delay 0 === insta leave",
