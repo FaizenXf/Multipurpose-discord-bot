@@ -119,7 +119,7 @@ module.exports = {
         let button_back = new MessageButton().setStyle('SUCCESS').setCustomId('1').setEmoji("🔙").setLabel(handlemsg(client.la[ls].cmds.info.help.buttons.back))
         let button_home = new MessageButton().setStyle('DANGER').setCustomId('2').setEmoji("🏠").setLabel(handlemsg(client.la[ls].cmds.info.help.buttons.home))
         let button_forward = new MessageButton().setStyle('SUCCESS').setCustomId('3').setEmoji('⏩').setLabel(handlemsg(client.la[ls].cmds.info.help.buttons.forward))
-        let button_tutorial = new MessageButton().setStyle('LINK').setEmoji(✉️").setLabel("Tutorial").setURL("https://youtu.be/E0R7d8gS908")
+        
         let menuOptions = [
           {
             label: "Overview",
@@ -261,7 +261,7 @@ module.exports = {
           .setMinValues(1)
           .setMaxValues(1)
           .addOptions(menuOptions.filter(Boolean))
-        let buttonRow = new MessageActionRow().addComponents([button_back, button_home, button_forward, button_tutorial])
+        let buttonRow = new MessageActionRow().addComponents([button_back, button_home, button_forward])
         let SelectionRow = new MessageActionRow().addComponents([menuSelection])
         const allbuttons = [buttonRow, SelectionRow]
         //define default embed
@@ -386,7 +386,7 @@ but you can also do \`${prefix}setup-SYSTEM\` e.g. \`${prefix}setup-welcome\``)
 
         collector.on('end', collected => {
           //array of all disabled buttons
-          let d_buttonRow = new MessageActionRow().addComponents([button_back.setDisabled(true), button_home.setDisabled(true), button_forward.setDisabled(true), button_tutorial])
+          let d_buttonRow = new MessageActionRow().addComponents([button_back.setDisabled(true), button_home.setDisabled(true), button_forward.setDisabled(true)])
           const alldisabledbuttons = [d_buttonRow]
           if (!edited) {
             edited = true;
