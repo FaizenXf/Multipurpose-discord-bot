@@ -11,7 +11,7 @@ const moment = require("moment")
 module.exports = {
   name: "uptime",
   category: "🔰 Info",
-  aliases: [""],
+  aliases: ["up"],
   usage: "uptime",
   description: "Returns the duration on how long the Bot is online",
   type: "bot",
