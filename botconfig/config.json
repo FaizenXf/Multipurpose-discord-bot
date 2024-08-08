@@ -1,6 +1,6 @@
 {
     "token": "GET from: https://discord.com/developers/applications",
-    "prefix": "//",
+    "prefix": ",",
     "ownerIDS": [
         "963354050617815060"
     ],
