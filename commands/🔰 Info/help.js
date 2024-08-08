@@ -116,15 +116,15 @@ module.exports = {
         }
         return message.reply({ embeds: [embed] });
       } else {
-        let button_back = new MessageButton().setStyle('SUCCESS').setCustomId('1').setEmoji("833802907509719130").setLabel(handlemsg(client.la[ls].cmds.info.help.buttons.back))
+        let button_back = new MessageButton().setStyle('SUCCESS').setCustomId('1').setEmoji("🔙").setLabel(handlemsg(client.la[ls].cmds.info.help.buttons.back))
         let button_home = new MessageButton().setStyle('DANGER').setCustomId('2').setEmoji("🏠").setLabel(handlemsg(client.la[ls].cmds.info.help.buttons.home))
-        let button_forward = new MessageButton().setStyle('SUCCESS').setCustomId('3').setEmoji('832598861813776394').setLabel(handlemsg(client.la[ls].cmds.info.help.buttons.forward))
-        let button_tutorial = new MessageButton().setStyle('LINK').setEmoji("840260133686870036").setLabel("Tutorial").setURL("https://youtu.be/E0R7d8gS908")
+        let button_forward = new MessageButton().setStyle('SUCCESS').setCustomId('3').setEmoji('⏩').setLabel(handlemsg(client.la[ls].cmds.info.help.buttons.forward))
+        let button_tutorial = new MessageButton().setStyle('LINK').setEmoji(✉️").setLabel("Tutorial").setURL("https://youtu.be/E0R7d8gS908")
         let menuOptions = [
           {
             label: "Overview",
             value: "Overview",
-            emoji: "833101995723194437",
+            emoji: "✉️",
             description: "My Overview of me!"
           },
           {
@@ -259,7 +259,7 @@ module.exports = {
           .setCustomId("MenuSelection")
           .setPlaceholder("Click me to view Help-Menu-Category-Page(s)")
           .setMinValues(1)
-          .setMaxValues(5)
+          .setMaxValues(1)
           .addOptions(menuOptions.filter(Boolean))
         let buttonRow = new MessageActionRow().addComponents([button_back, button_home, button_forward, button_tutorial])
         let SelectionRow = new MessageActionRow().addComponents([menuSelection])
@@ -284,7 +284,7 @@ but you can also do \`${prefix}setup-SYSTEM\` e.g. \`${prefix}setup-welcome\``)
 :file_folder: on **${client.guilds.cache.size} Guilds**
 ⌚️ **${duration(client.uptime).map(i => `\`${i}\``).join("︲")} Uptime**
 📶 **\`${Math.floor(client.ws.ping)}ms\` Ping**
-<:MilratoDevelopment:900389724936609842>  Made by [**Milrato Development**](https://discord.gg/milrato)`)
+<:MilratoDevelopment:900389724936609842>  Made by [**Faizyy Development**](https://discord.gg/FaizenSosuke)`)
           .addField("How to get help?", `>>> **\` 1. Way \`** *Use the Buttons, to swap the Pages*\n**\` 2. Way \`** *Use the Menu to select all Help Pages, you want to display*\n**\` 3. Way \`** *Watch the Youtube Tutorial*`)
 
         let err = false;
